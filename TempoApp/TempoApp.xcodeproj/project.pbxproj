@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B6047951E30F5F500C309FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6047941E30F5F500C309FD /* AppDelegate.swift */; };
+		2B6047971E30F5F500C309FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6047961E30F5F500C309FD /* ViewController.swift */; };
+		2B60479A1E30F5F500C309FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B6047981E30F5F500C309FD /* Main.storyboard */; };
+		2B60479C1E30F5F500C309FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B60479B1E30F5F500C309FD /* Assets.xcassets */; };
+		2B60479F1E30F5F500C309FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B60479D1E30F5F500C309FD /* LaunchScreen.storyboard */; };
+		523E56F848FE1E62593BE8F5 /* Pods_TempoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9C4010B6AF3C9C5902FFB5 /* Pods_TempoApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B6047911E30F5F500C309FD /* TempoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B6047941E30F5F500C309FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B6047961E30F5F500C309FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B6047991E30F5F500C309FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B60479B1E30F5F500C309FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B60479E1E30F5F500C309FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B6047A01E30F5F500C309FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A9C4010B6AF3C9C5902FFB5 /* Pods_TempoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TempoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B5B2FBC8E87BD79305E7722 /* Pods-TempoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TempoApp/Pods-TempoApp.release.xcconfig"; sourceTree = "<group>"; };
+		9BA94F2A961D7123438602B3 /* Pods-TempoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TempoApp/Pods-TempoApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B60478E1E30F5F500C309FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523E56F848FE1E62593BE8F5 /* Pods_TempoApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B6047881E30F5F500C309FD = {
+			isa = PBXGroup;
+			children = (
+				2B6047931E30F5F500C309FD /* TempoApp */,
+				2B6047921E30F5F500C309FD /* Products */,
+				BE30EF6D688EF3FD58444538 /* Pods */,
+				5C4E80F34B9EE669CE600E68 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2B6047921E30F5F500C309FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B6047911E30F5F500C309FD /* TempoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B6047931E30F5F500C309FD /* TempoApp */ = {
+			isa = PBXGroup;
+			children = (
+				2B6047941E30F5F500C309FD /* AppDelegate.swift */,
+				2B6047961E30F5F500C309FD /* ViewController.swift */,
+				2B6047981E30F5F500C309FD /* Main.storyboard */,
+				2B60479B1E30F5F500C309FD /* Assets.xcassets */,
+				2B60479D1E30F5F500C309FD /* LaunchScreen.storyboard */,
+				2B6047A01E30F5F500C309FD /* Info.plist */,
+			);
+			path = TempoApp;
+			sourceTree = "<group>";
+		};
+		5C4E80F34B9EE669CE600E68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A9C4010B6AF3C9C5902FFB5 /* Pods_TempoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE30EF6D688EF3FD58444538 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BA94F2A961D7123438602B3 /* Pods-TempoApp.debug.xcconfig */,
+				8B5B2FBC8E87BD79305E7722 /* Pods-TempoApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B6047901E30F5F500C309FD /* TempoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B6047A31E30F5F500C309FD /* Build configuration list for PBXNativeTarget "TempoApp" */;
+			buildPhases = (
+				8460A433BD66ED9240792C57 /* [CP] Check Pods Manifest.lock */,
+				2B60478D1E30F5F500C309FD /* Sources */,
+				2B60478E1E30F5F500C309FD /* Frameworks */,
+				2B60478F1E30F5F500C309FD /* Resources */,
+				979D540EA8A5730F878B0D00 /* [CP] Embed Pods Frameworks */,
+				CF360B8DFA75D5C979FB886F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TempoApp;
+			productName = TempoApp;
+			productReference = 2B6047911E30F5F500C309FD /* TempoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B6047891E30F5F500C309FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "jeremias araujo";
+				TargetAttributes = {
+					2B6047901E30F5F500C309FD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HW9ZGNVSF3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2B60478C1E30F5F500C309FD /* Build configuration list for PBXProject "TempoApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B6047881E30F5F500C309FD;
+			productRefGroup = 2B6047921E30F5F500C309FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B6047901E30F5F500C309FD /* TempoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B60478F1E30F5F500C309FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B60479F1E30F5F500C309FD /* LaunchScreen.storyboard in Resources */,
+				2B60479C1E30F5F500C309FD /* Assets.xcassets in Resources */,
+				2B60479A1E30F5F500C309FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8460A433BD66ED9240792C57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		979D540EA8A5730F878B0D00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TempoApp/Pods-TempoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF360B8DFA75D5C979FB886F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TempoApp/Pods-TempoApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B60478D1E30F5F500C309FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B6047971E30F5F500C309FD /* ViewController.swift in Sources */,
+				2B6047951E30F5F500C309FD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2B6047981E30F5F500C309FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B6047991E30F5F500C309FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B60479D1E30F5F500C309FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B60479E1E30F5F500C309FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B6047A11E30F5F500C309FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B6047A21E30F5F500C309FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B6047A41E30F5F500C309FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BA94F2A961D7123438602B3 /* Pods-TempoApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HW9ZGNVSF3;
+				INFOPLIST_FILE = TempoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeremiasaraujo.TempoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2B6047A51E30F5F500C309FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B5B2FBC8E87BD79305E7722 /* Pods-TempoApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HW9ZGNVSF3;
+				INFOPLIST_FILE = TempoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeremiasaraujo.TempoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B60478C1E30F5F500C309FD /* Build configuration list for PBXProject "TempoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B6047A11E30F5F500C309FD /* Debug */,
+				2B6047A21E30F5F500C309FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B6047A31E30F5F500C309FD /* Build configuration list for PBXNativeTarget "TempoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B6047A41E30F5F500C309FD /* Debug */,
+				2B6047A51E30F5F500C309FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B6047891E30F5F500C309FD /* Project object */;
+}
