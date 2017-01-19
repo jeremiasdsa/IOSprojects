@@ -92,7 +92,7 @@
                                 <rect key="frame" x="0.0" y="200" width="375" height="467"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="118" id="SR3-mg-hwW">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="118" id="SR3-mg-hwW">
                                         <rect key="frame" x="0.0" y="28" width="375" height="118"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SR3-mg-hwW" id="UTK-kd-h7Y">
@@ -100,14 +100,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zJm-9a-pSM">
-                                                    <rect key="frame" x="9" y="34" width="50" height="50"/>
+                                                    <rect key="frame" x="9" y="18" width="50" height="50"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="50" id="PBN-5z-zc9"/>
-                                                        <constraint firstAttribute="width" constant="50" id="nZz-G8-E3B"/>
+                                                        <constraint firstAttribute="width" constant="50" id="dG1-29-zz7"/>
+                                                        <constraint firstAttribute="height" constant="50" id="iIs-hF-0Gk"/>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nbb-pZ-v1K">
-                                                    <rect key="frame" x="79" y="35" width="219" height="48"/>
+                                                    <rect key="frame" x="79" y="18" width="219" height="48"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="tmp-pv-3uO">
                                                             <rect key="frame" x="0.0" y="0.0" width="109.5" height="48"/>
@@ -147,9 +147,10 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="nbb-pZ-v1K" firstAttribute="centerY" secondItem="UTK-kd-h7Y" secondAttribute="centerY" id="Ibf-p9-2h6"/>
+                                                <constraint firstItem="zJm-9a-pSM" firstAttribute="leading" secondItem="UTK-kd-h7Y" secondAttribute="leadingMargin" constant="1" id="U5V-na-qRR"/>
+                                                <constraint firstItem="zJm-9a-pSM" firstAttribute="top" secondItem="UTK-kd-h7Y" secondAttribute="topMargin" constant="10" id="cYI-mV-NtS"/>
+                                                <constraint firstItem="nbb-pZ-v1K" firstAttribute="top" secondItem="UTK-kd-h7Y" secondAttribute="topMargin" constant="10" id="dTc-RF-P5i"/>
                                                 <constraint firstItem="nbb-pZ-v1K" firstAttribute="leading" secondItem="zJm-9a-pSM" secondAttribute="trailing" constant="20" id="eLG-Iq-ZeL"/>
-                                                <constraint firstItem="zJm-9a-pSM" firstAttribute="centerY" secondItem="UTK-kd-h7Y" secondAttribute="centerY" id="i6a-lh-ojg"/>
                                                 <constraint firstItem="zJm-9a-pSM" firstAttribute="leading" secondItem="UTK-kd-h7Y" secondAttribute="leadingMargin" constant="1" id="noL-W6-rZv"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -181,6 +182,14 @@
                             <constraint firstItem="fu0-sw-yPY" firstAttribute="top" secondItem="nzZ-yN-thA" secondAttribute="bottom" id="wId-IJ-m2h"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="city" destination="d7N-4L-BLd" id="Iws-NX-fj6"/>
+                        <outlet property="dia" destination="5It-EI-h4X" id="sRb-LU-6MD"/>
+                        <outlet property="image" destination="AUA-f3-t6B" id="Yha-lV-n5j"/>
+                        <outlet property="tableview" destination="fu0-sw-yPY" id="fAe-6y-ee4"/>
+                        <outlet property="temperature" destination="CwK-BI-0HM" id="cIq-Fr-45P"/>
+                        <outlet property="weathernow" destination="8I5-ql-hRW" id="kqa-do-Tht"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

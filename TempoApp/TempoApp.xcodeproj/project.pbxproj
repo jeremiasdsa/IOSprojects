@@ -12,6 +12,8 @@
 		2B60479A1E30F5F500C309FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B6047981E30F5F500C309FD /* Main.storyboard */; };
 		2B60479C1E30F5F500C309FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B60479B1E30F5F500C309FD /* Assets.xcassets */; };
 		2B60479F1E30F5F500C309FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B60479D1E30F5F500C309FD /* LaunchScreen.storyboard */; };
+		2B6047A71E31433C00C309FD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6047A61E31433C00C309FD /* Constants.swift */; };
+		2B6047A91E314D1D00C309FD /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6047A81E314D1D00C309FD /* CurrentWeather.swift */; };
 		523E56F848FE1E62593BE8F5 /* Pods_TempoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9C4010B6AF3C9C5902FFB5 /* Pods_TempoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		2B60479B1E30F5F500C309FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B60479E1E30F5F500C309FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B6047A01E30F5F500C309FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B6047A61E31433C00C309FD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2B6047A81E314D1D00C309FD /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		8A9C4010B6AF3C9C5902FFB5 /* Pods_TempoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TempoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5B2FBC8E87BD79305E7722 /* Pods-TempoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TempoApp/Pods-TempoApp.release.xcconfig"; sourceTree = "<group>"; };
 		9BA94F2A961D7123438602B3 /* Pods-TempoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TempoApp/Pods-TempoApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,7 +67,9 @@
 			children = (
 				2B6047941E30F5F500C309FD /* AppDelegate.swift */,
 				2B6047961E30F5F500C309FD /* ViewController.swift */,
+				2B6047A81E314D1D00C309FD /* CurrentWeather.swift */,
 				2B6047981E30F5F500C309FD /* Main.storyboard */,
+				2B6047A61E31433C00C309FD /* Constants.swift */,
 				2B60479B1E30F5F500C309FD /* Assets.xcassets */,
 				2B60479D1E30F5F500C309FD /* LaunchScreen.storyboard */,
 				2B6047A01E30F5F500C309FD /* Info.plist */,
@@ -214,6 +220,8 @@
 			files = (
 				2B6047971E30F5F500C309FD /* ViewController.swift in Sources */,
 				2B6047951E30F5F500C309FD /* AppDelegate.swift in Sources */,
+				2B6047A91E314D1D00C309FD /* CurrentWeather.swift in Sources */,
+				2B6047A71E31433C00C309FD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +385,7 @@
 				2B6047A51E30F5F500C309FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
