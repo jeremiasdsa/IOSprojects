@@ -78,9 +78,11 @@ class CurrentWeather{
                 }
                 
 //              print("dict?? \(dict)")
-//              print(dict["name"])
-//              print(dict["id"])
-//              print(dict["clouds"])
+              print(self.cityName)
+              print(self.currentTemp)
+              print(self.weatherType)
+              print(self.date)
+             
             }
             
         }

@@ -18,7 +18,7 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
     @IBOutlet weak var weathernow: UILabel!
     @IBOutlet weak var tableview: UITableView!
     
-    var currentWeather = CurrentWeather()
+  
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,24 +26,11 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         
         tableview.delegate = self
         tableview.dataSource = self
+ 
+   
+            self.updateUI()
         
-        print(CURRENT_WEATHER_URL)
-        
-        
-//        Alamofire.request(CURRENT_WEATHER_URL).responseJSON { response in
-//            print(response.request)  // original URL request
-//            print(response.response) // HTTP URL response
-//            print(response.data)     // server data
-//            print(response.result)   // result of response serialization
-//            
-//            if let JSON = response.result.value {
-//                print("JSON: \(JSON)")
-//            }
-//        }
-        self.currentWeather.downloadWeatherDetais {
-            //setup
-        }
-        
+         
     }
 
     override func didReceiveMemoryWarning() {
@@ -65,6 +52,107 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         return cell
     }
 
+    
+    func updateUI(){
+        
+        var _cityName: String!
+        var _date: String!
+        var _weatherType: String!
+        var _currentTemp: Double!
+//
+        var cityName: String {
+            if _cityName == nil {
+                _cityName = ""
+            }
+            return _cityName
+        }
+        
+        var date: String {
+            if _date == nil {
+                _date = ""
+            }
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateStyle = .long
+            dateFormatter.timeStyle = .none
+            let currentDate = dateFormatter.string(from: Date())
+            _date = "Today, \(currentDate)"
+            return _date
+        }
+        
+        var weatherType :String{
+            if _weatherType == nil {
+                _weatherType = ""
+            }
+            return _weatherType
+        }
+        
+        var currentTemp : Double {
+            if _currentTemp == nil {
+                _currentTemp = 0.0
+            }
+            return _currentTemp
+        }
+//
+//        
+//        func downloadWeatherDetais(completed: DownloadComplete){
+        
+            Alamofire.request(CURRENT_WEATHER_URL).responseJSON { response in
+                let result = response.result
+                
+                
+                if let dict = result.value as? Dictionary<String, AnyObject> {
+                    
+                    if let name = dict["name"] as? String {
+                        _cityName = name.capitalized
+                          self.city.text = cityName+" - PB"
+                    }
+                    
+                    if let weather = dict["weather"] as? [Dictionary<String,AnyObject>]{
+                        if let main = weather[0]["main"] as? String{
+                            _weatherType = main.capitalized
+                            self.weathernow.text = weatherType
+                            self.image.image = UIImage(named: weatherType)
+                           
+                        }
+                    }
+                    
+                    if let main = dict["main"] as? Dictionary<String,AnyObject>{
+                        if let currentTemp = main["temp"] as? Double{
+                            let kelvinToCelcius = currentTemp - 273
+                            _currentTemp = Double(round(kelvinToCelcius))
+                            self.temperature.text = String(_currentTemp)+"°"
+                            
+                        }
+                    }
+                    
+                    //              print("dict?? \(dict)")
+                    print(cityName)
+                    print(currentTemp)
+                    print(weatherType)
+                    print(date)
+                    
+                }
+                
+            }
+            
+//            completed()
+//            
+//        }
+        
+        
+        
+        
+        print("________1")
+     
+        dia.text = date
+//        print("________2")
+//        print(currentWeather._cityName, currentWeather.currentTemp, currentWeather.date, currentWeather.weatherType)
+//        
+        
+         print("________3")
+        
+    }
 
 }
 
