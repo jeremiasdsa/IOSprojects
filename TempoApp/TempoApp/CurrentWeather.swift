@@ -78,10 +78,10 @@ class CurrentWeather{
                 }
                 
 //              print("dict?? \(dict)")
-              print(self.cityName)
-              print(self.currentTemp)
-              print(self.weatherType)
-              print(self.date)
+//              print(self.cityName)
+//              print(self.currentTemp)
+//              print(self.weatherType)
+//              print(self.date)
              
             }
             

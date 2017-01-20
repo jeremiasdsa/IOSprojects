@@ -60,8 +60,11 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
                     for obj in list {
                         let forecast = Forecast(weatherDict: obj)
                         self.forecasts.append(forecast)
-                        print(obj)
+//                        print(obj)
                     }
+                    
+                    self.forecasts.remove(at: 0)
+                    self.tableview.reloadData()
                 }
             }
             completed()
@@ -79,12 +82,18 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return forecasts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath)
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath) as? WeatherCell{
+            let forecast = forecasts[indexPath.row]
+            
+            cell.configureWcell(forecast: forecast)
+            
+            return cell
+        }
+        return WeatherCell()
     }
 
     
@@ -162,10 +171,10 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
                     }
                     
                     //              print("dict?? \(dict)")
-                    print(cityName)
-                    print(currentTemp)
-                    print(weatherType)
-                    print(date)
+//                    print(cityName)
+//                    print(currentTemp)
+//                    print(weatherType)
+//                    print(date)
                     
                 }
                 
