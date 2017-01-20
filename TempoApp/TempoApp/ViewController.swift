@@ -19,14 +19,23 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
     @IBOutlet weak var tableview: UITableView!
     
     var forecast: Forecast!
+    
     var forecasts = [Forecast]()
 
+    var biblioteca : Biblioteca!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         tableview.delegate = self
         tableview.dataSource = self
+        
+        biblioteca = Biblioteca()
+        
+        biblioteca.downloadBibliotecaData {
+            //code
+        }
        
         self.downloadForecastData {
             self.updateUI()
