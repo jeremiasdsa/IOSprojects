@@ -14,5 +14,11 @@ let API_KEY = ",uk&appid=53e8b4a8ef6163aeffb053619054f74b"
 
 typealias DownloadComplete = () -> ()
 
-
+let BASE_URL_FORECAST = "http://api.openweathermap.org/data/2.5/forecast/daily?q="
+let API_KEY_FORECAST = "&units=metric&cnt=16&appid=53e8b4a8ef6163aeffb053619054f74b"
 let CURRENT_WEATHER_URL = "\(BASE_URL)\(CITY)\(API_KEY)"
+
+let FORECAST_URL = "\(BASE_URL_FORECAST)\(CITY)\(API_KEY_FORECAST)"
+
+
+	

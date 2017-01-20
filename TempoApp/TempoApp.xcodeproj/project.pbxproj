@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A3E7BB61E31AB91005F1288 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3E7BB51E31AB91005F1288 /* Forecast.swift */; };
 		2B6047951E30F5F500C309FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6047941E30F5F500C309FD /* AppDelegate.swift */; };
 		2B6047971E30F5F500C309FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6047961E30F5F500C309FD /* ViewController.swift */; };
 		2B60479A1E30F5F500C309FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B6047981E30F5F500C309FD /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A3E7BB51E31AB91005F1288 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		2B6047911E30F5F500C309FD /* TempoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B6047941E30F5F500C309FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B6047961E30F5F500C309FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				2B6047941E30F5F500C309FD /* AppDelegate.swift */,
 				2B6047961E30F5F500C309FD /* ViewController.swift */,
 				2B6047A81E314D1D00C309FD /* CurrentWeather.swift */,
+				1A3E7BB51E31AB91005F1288 /* Forecast.swift */,
 				2B6047981E30F5F500C309FD /* Main.storyboard */,
 				2B6047A61E31433C00C309FD /* Constants.swift */,
 				2B60479B1E30F5F500C309FD /* Assets.xcassets */,
@@ -222,6 +225,7 @@
 				2B6047951E30F5F500C309FD /* AppDelegate.swift in Sources */,
 				2B6047A91E314D1D00C309FD /* CurrentWeather.swift in Sources */,
 				2B6047A71E31433C00C309FD /* Constants.swift in Sources */,
+				1A3E7BB61E31AB91005F1288 /* Forecast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
