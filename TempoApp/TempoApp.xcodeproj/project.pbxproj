@@ -10,6 +10,7 @@
 		1A3E7BB61E31AB91005F1288 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3E7BB51E31AB91005F1288 /* Forecast.swift */; };
 		1A3E7BB81E31C032005F1288 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3E7BB71E31C032005F1288 /* Alamofire.framework */; };
 		1A3E7BD81E31CD70005F1288 /* Biblioteca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3E7BD71E31CD70005F1288 /* Biblioteca.swift */; };
+		1AB2F5481E352DAD00BC982C /* BibliotecaViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB2F5471E352DAD00BC982C /* BibliotecaViewCell.swift */; };
 		2B6047951E30F5F500C309FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6047941E30F5F500C309FD /* AppDelegate.swift */; };
 		2B6047971E30F5F500C309FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6047961E30F5F500C309FD /* ViewController.swift */; };
 		2B60479A1E30F5F500C309FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B6047981E30F5F500C309FD /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		1A3E7BB51E31AB91005F1288 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		1A3E7BB71E31C032005F1288 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/TempoApp-ehkuhzwhfzljepfjokpltkxgqhmk/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		1A3E7BD71E31CD70005F1288 /* Biblioteca.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Biblioteca.swift; sourceTree = "<group>"; };
+		1AB2F5471E352DAD00BC982C /* BibliotecaViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliotecaViewCell.swift; sourceTree = "<group>"; };
 		2B6047911E30F5F500C309FD /* TempoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B6047941E30F5F500C309FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B6047961E30F5F500C309FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				1A3E7BB51E31AB91005F1288 /* Forecast.swift */,
 				1A3E7BD71E31CD70005F1288 /* Biblioteca.swift */,
 				2B6047981E30F5F500C309FD /* Main.storyboard */,
+				1AB2F5471E352DAD00BC982C /* BibliotecaViewCell.swift */,
 				2B6047A61E31433C00C309FD /* Constants.swift */,
 				2BD152321E329DEA00BDAC1D /* WeatherCell.swift */,
 				2B60479B1E30F5F500C309FD /* Assets.xcassets */,
@@ -145,7 +148,6 @@
 				TargetAttributes = {
 					2B6047901E30F5F500C309FD = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = HW9ZGNVSF3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -236,6 +238,7 @@
 			files = (
 				2B6047971E30F5F500C309FD /* ViewController.swift in Sources */,
 				2B6047951E30F5F500C309FD /* AppDelegate.swift in Sources */,
+				1AB2F5481E352DAD00BC982C /* BibliotecaViewCell.swift in Sources */,
 				2B6047A91E314D1D00C309FD /* CurrentWeather.swift in Sources */,
 				2B6047A71E31433C00C309FD /* Constants.swift in Sources */,
 				1A3E7BB61E31AB91005F1288 /* Forecast.swift in Sources */,
@@ -363,7 +366,7 @@
 			baseConfigurationReference = 9BA94F2A961D7123438602B3 /* Pods-TempoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HW9ZGNVSF3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TempoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeremiasaraujo.TempoApp;
@@ -377,7 +380,7 @@
 			baseConfigurationReference = 8B5B2FBC8E87BD79305E7722 /* Pods-TempoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HW9ZGNVSF3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TempoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeremiasaraujo.TempoApp;

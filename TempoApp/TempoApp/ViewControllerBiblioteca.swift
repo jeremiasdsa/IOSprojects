@@ -8,10 +8,29 @@
 
 import UIKit
 
-class ViewControllerBiblioteca: UIViewController {
+class ViewControllerBiblioteca: UIViewController , UITableViewDelegate, UITableViewDataSource {
 
+
+    @IBOutlet weak var tableview: UITableView!
+    
+    var biblioteca : Biblioteca!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableview.delegate = self
+        tableview.dataSource = self
+        
+        biblioteca = Biblioteca()
+        
+        biblioteca.downloadBibliotecaData2 {
+            print("ViewControlerBiblioteca -- doing download")
+            print(self.biblioteca.fulldicionario)
+        }
+        
+        
+        
 
         // Do any additional setup after loading the view.
     }
@@ -21,7 +40,28 @@ class ViewControllerBiblioteca: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func pressedButton(_ sender: Any) {
+        print("Clicadamente clicado")
+    }
 
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 6
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "bibliotecaCell", for: indexPath)
+        
+        return cell
+    }
+
+    
+    
     /*
     // MARK: - Navigation
 

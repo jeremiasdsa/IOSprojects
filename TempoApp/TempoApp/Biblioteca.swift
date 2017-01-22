@@ -14,7 +14,7 @@ class Biblioteca{
     let url = "http://biblioteca-jeremias.appspot.com/get/1"
      let url2 = "http://biblioteca-jeremias.appspot.com/get"
     
-    var fulldic = [Dictionary<String,AnyObject>]()
+    var fulldic : [Dictionary<String,AnyObject>]!
     
     var _livro_id: String!
     var _preco: String!
@@ -22,6 +22,16 @@ class Biblioteca{
     var _autores: String!
     var _capa: String!
     var _descricao: String!
+    
+    
+    
+    var fulldicionario : [Dictionary<String,AnyObject>] {
+        if fulldic == nil{
+            print("NIIILL.. RETORNANDO VAZIO.")
+            fulldic = [Dictionary<String,AnyObject>]()
+        }
+        return fulldic
+    }
     
     var livro_id: String {
         if _livro_id == nil {
@@ -64,19 +74,20 @@ class Biblioteca{
     
     
     
-    func downloadBibliotecaData2(completed: @escaping  DownloadComplete){
+    func downloadBibliotecaData2(completed: @escaping DownloadComplete){
+        print("Entrei - dowloadBibliotecaData2")
         
         Alamofire.request(url2).responseJSON{ response in
             
             let result = response.result
-//            print(result)
+            print(result)
             print("________________________________")
             
             if let f_dict = result.value as? [Dictionary<String,AnyObject>]{
                 
                 self.fulldic = f_dict
                 
-//                print(self.fulldic, "fulldict")
+//                print(self.fulldicionario, "fulldict")
                 for dic in f_dict{
                     
                     if let __livro_id = dic["livro_id"] as? String{
@@ -86,14 +97,13 @@ class Biblioteca{
                     }
                 
                 }
-                
-                
-                
+
                 
             }
             
         }
         completed()
+        
     }
     
     
@@ -102,9 +112,9 @@ class Biblioteca{
     
     func downloadBibliotecaData(completed: @escaping  DownloadComplete){
         
-        downloadBibliotecaData2 {
-           // <#code#>
-        }
+//        downloadBibliotecaData2 {
+//           // <#code#>
+//        }
         
         Alamofire.request(url).responseJSON{ response in
 
@@ -145,7 +155,7 @@ class Biblioteca{
         
         }
     completed()
-        print(self.fulldic, "fulldict")
+        print(self.fulldicionario, "fulldicionario")
     }
     
     
