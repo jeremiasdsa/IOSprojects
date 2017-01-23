@@ -22,10 +22,8 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
     
     var forecasts = [Forecast]()
 
-//    var biblioteca : Biblioteca!
-    
-    
     var currentweather: CurrentWeather!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,28 +32,30 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         tableview.delegate = self
         tableview.dataSource = self
         
-//        biblioteca = Biblioteca()
+
         currentweather = CurrentWeather()
-//        
-//        biblioteca.downloadBibliotecaData {
-//            //code
-//        }
+
        
         self.downloadForecastData {
 //            self.updateUI()
             self.currentweather.downloadWeatherDetais {
-//                <#code#>
+                
+  
             }
+            print("agora meu amigo.. vc devia ser?>>>>>>:",self.currentweather.weatherType)
+            self.image.image = UIImage(named: self.currentweather._weatherType)
+            self.reloadInputViews()
         }
    
-            
         
+       
+
         
          
     }
     
     func downloadForecastData(completed: @escaping DownloadComplete){
-//        let forecastURL = URL(string: FORECAST_URL)!
+
         
         Alamofire.request(FORECAST_URL).responseJSON { response in
             let result = response.result
@@ -97,7 +97,7 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
             let forecast = forecasts[indexPath.row]
             
             cell.configureWcell(forecast: forecast)
-            
+       
             return cell
         }
         return WeatherCell()

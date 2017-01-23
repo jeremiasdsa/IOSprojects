@@ -13,6 +13,8 @@ class ViewControllerBiblioteca: UIViewController , UITableViewDelegate, UITableV
 
     @IBOutlet weak var tableview: UITableView!
     
+    @IBOutlet weak var imageBig: UIImageView!
+    
     var biblioteca : Biblioteca!
     
     
@@ -25,8 +27,8 @@ class ViewControllerBiblioteca: UIViewController , UITableViewDelegate, UITableV
         biblioteca = Biblioteca()
         
         biblioteca.downloadBibliotecaData2 {
-            print("ViewControlerBiblioteca -- doing download")
-            print(self.biblioteca.fulldicionario)
+            
+            self.tableview.reloadData()
         }
         
         
@@ -51,13 +53,34 @@ class ViewControllerBiblioteca: UIViewController , UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return self.biblioteca.fulldicionario.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "bibliotecaCell", for: indexPath)
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "bibliotecaCell", for: indexPath) as? BibliotecaViewCell{
+          
+            cell.setupCell(biblioteca: self.biblioteca.fulldicionario[indexPath.row])
+            
+            
+           
+            return cell
         
-        return cell
+            
+        }
+        
+        return BibliotecaViewCell()
+        
+        
+    
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(self.biblioteca.fulldicionario[indexPath.row]["capa"] as! String)
+        
+        let cell = tableView.cellForRow(at: indexPath) as? BibliotecaViewCell
+        imageBig.image = cell?.imageViewBiblioteca.image
+        
+        
     }
 
     

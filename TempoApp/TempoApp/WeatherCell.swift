@@ -35,7 +35,9 @@ class WeatherCell: UITableViewCell {
 
             override func setSelected(_ selected: Bool, animated: Bool) {
                 super.setSelected(selected, animated: animated)
-//                print("selected com sucesso", self)
+              
+                
+                
 
                 // Configure the view for the selected state
             }

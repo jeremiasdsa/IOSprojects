@@ -10,7 +10,9 @@ import UIKit
 
 class BibliotecaViewCell: UITableViewCell {
     
-    @IBOutlet weak var webView: UIWebView!
+ 
+    @IBOutlet weak var imageViewBiblioteca: UIImageView!
+    
     
     @IBOutlet weak var livro: UILabel!
     
@@ -18,9 +20,47 @@ class BibliotecaViewCell: UITableViewCell {
     
     
     
-    func setupCell(livro: Biblioteca){
-        self.livro.text = livro.titulo
-        self.autor.text = livro.autores
+    
+    
+    
+    
+    
+    
+    func setupCell(biblioteca: Dictionary<String,AnyObject>){
+        
+        let biblioteca = biblioteca
+        
+
+        if let __titulo = biblioteca["titulo"] as? String{
+           
+            self.livro.text = __titulo
+          
+            //                    print(self.titulo)
+        }
+        if let __autores = biblioteca["autores"] as? String{
+              self.autor.text = __autores
+            
+            //                    print(self.autores)
+        }
+        if let __capa = biblioteca["capa"] as? String{
+            
+           
+            
+            let url = URL(string: __capa)
+            
+            
+                DispatchQueue.global().async {
+                    
+                    let data2 = try? Data(contentsOf: url!)
+                    DispatchQueue.main.async {
+                        
+                        self.imageViewBiblioteca.image = UIImage(data: data2!)
+                    }
+                    
+                }
+            
+        }
+
         
     }
     

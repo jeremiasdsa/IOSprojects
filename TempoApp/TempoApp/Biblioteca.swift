@@ -27,9 +27,10 @@ class Biblioteca{
     
     var fulldicionario : [Dictionary<String,AnyObject>] {
         if fulldic == nil{
-            print("NIIILL.. RETORNANDO VAZIO.")
+            
             fulldic = [Dictionary<String,AnyObject>]()
         }
+        
         return fulldic
     }
     
@@ -70,93 +71,38 @@ class Biblioteca{
         return _descricao
     }
     
-    
-    
-    
+
     
     func downloadBibliotecaData2(completed: @escaping DownloadComplete){
-        print("Entrei - dowloadBibliotecaData2")
+   
         
         Alamofire.request(url2).responseJSON{ response in
             
             let result = response.result
-            print(result)
-            print("________________________________")
+
             
             if let f_dict = result.value as? [Dictionary<String,AnyObject>]{
                 
                 self.fulldic = f_dict
                 
-//                print(self.fulldicionario, "fulldict")
+
                 for dic in f_dict{
                     
                     if let __livro_id = dic["livro_id"] as? String{
                         self._livro_id = __livro_id
-//                        print(__livro_id)
-//                        print("\(dic["titulo"])")
+
                     }
                 
                 }
-
-                
+     
             }
-            
+            completed()
         }
-        completed()
         
     }
     
     
-    
-    
-    
-    func downloadBibliotecaData(completed: @escaping  DownloadComplete){
-        
-//        downloadBibliotecaData2 {
-//           // <#code#>
-//        }
-        
-        Alamofire.request(url).responseJSON{ response in
 
-            let result = response.result
-//            print(result)
-            print("________________________________")
-            
-            if let dict = result.value as? Dictionary<String,AnyObject>{
-                
-                if let __livro_id = dict["livro_id"] as? String{
-                    self._livro_id = __livro_id
-//                    print(self.livro_id)
-                }
-                if let __preco = dict["preco"] as? String{
-                    self._preco = __preco
-//                    print(self.preco)
-                }
-                if let __titulo = dict["titulo"] as? String{
-                    self._titulo = __titulo
-//                    print(self.titulo)
-                }
-                if let __autores = dict["autores"] as? String{
-                    self._autores = __autores
-//                    print(self.autores)
-                }
-                if let __capa = dict["capa"] as? String{
-                    self._capa = __capa
-//                    print(self.capa)
-                }
-
-                if let __descricao = dict["descricao"] as? String{
-                    self._descricao = __descricao
-//                    print(self.descricao)
-                }
-
-
-            }
-        
-        }
-    completed()
-        print(self.fulldicionario, "fulldicionario")
-    }
     
     
     
