@@ -13,15 +13,5 @@
     "id"    : 4,
     "title" : "Movie D",
     "genre" : "Satire"
-  },
-  {
-    "id"    : 5,
-    "title" : "Movie E",
-    "genre" : "Satire"
-  },
-  {
-    "id"    : 8,
-    "title" : "Movie G",
-    "genre" : "Satire"
   }
 ]
