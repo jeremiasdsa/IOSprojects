@@ -1,0 +1,135 @@
+{
+	"equipes": [
+
+		{
+			"id": "01",
+			"nome": "Flamengo",
+			"sigla": "FLA",
+			"img": "http://s.glbimg.com/es/sde/f/equipes/2014/04/14/flamengo_60x60.png"
+		},
+		{
+			"id": "02",
+			"nome": "Palmeiras",
+			"sigla": "PAL",
+			"img": "http://s.glbimg.com/es/sde/f/equipes/2014/04/14/palmeiras_60x60.png"
+		},
+		{
+			"id": "03",
+			"nome": "Corinthias",
+			"sigla": "COR",
+			"img": "http://s.glbimg.com/es/sde/f/equipes/2014/04/14/corinthians_60x60.png"
+		},
+		{
+			"id": "04",
+			"nome": "Fluminense",
+			"sigla": "FLU",
+			"img": "http://s.glbimg.com/es/sde/f/equipes/2015/05/05/fluminense-escudo-65x65.png"
+		}
+	],
+
+	"jogos": [
+
+		{
+			"id": "01",
+			"rodada": 1,
+			"equipe1": 1,
+			"equipe2": 2,
+			"data": "QUA-19:20",
+			"local": "barradao",
+			"placar_eq1": 2,
+			"placar_eq2": 0,
+			"detalhes": 1
+		},
+		{
+			"id": "02",
+			"rodada": 1,
+			"equipe1": 3,
+			"equipe2": 4,
+			"data": "QUI-18:00",
+			"local": "amigao",
+			"placar_eq1": 1,
+			"placar_eq2": 1,
+			"detalhes": 2
+		},
+		{
+			"id": "03",
+			"rodada": 1,
+			"equipe1": 2,
+			"equipe2": 3,
+			"data": "SEX-20:00",
+			"local": "mineirao",
+			"placar_eq1": 0,
+			"placar_eq2": 1,
+			"detalhes": 3
+		},
+		{
+			"id": "04",
+			"rodada": 2,
+			"equipe1": 3,
+			"equipe2": 4,
+			"data": "SEG-14:00",
+			"local": "barradao",
+			"placar_eq1": "_",
+			"placar_eq2": "_",
+			"detalhes": 4
+		},
+		{
+			"id": "05",
+			"rodada": 2,
+			"equipe1": 2,
+			"equipe2": 1,
+			"data": "TER-17:40",
+			"local": "amigao",
+			"placar_eq1": "_",
+			"placar_eq2": "_",
+			"detalhes": 5
+		}
+
+	],
+
+	"detalhes": [
+
+		{
+			"id": 1,
+			"timeLine": {
+				"10": "Gol de Miguel do Flamengo",
+				"25": "Cartao amarelo para jogador Neimar do Flamengo",
+				"40": "Cartao vermelho para jogador Ronaldo do Palmeiras",
+				"60": "Gol de Messi do Flamengo",
+				"80": "Substituicao do Palmeiras"
+			}
+		},
+
+		{
+			"id": 2,
+			"timeLine": {
+				"15": "Gol de Paulo do Corinthias",
+				"28": "Substituicao do Fluminense",
+				"42": "Cartao vermelho para jogador Ronaldo do Corinthias",
+				"64": "Gol de Pedrinho do Fluminense",
+				"83": "Falta de Pedrinho do Corinthias"
+			}
+		},
+		{
+			"id": 3,
+			"timeLine": {
+				"22": "Lateral esquerdo para Corinthias",
+				"25": "Advertencia para Cuca do Corinthias",
+				"33": "Cartao amarelo para jogador Ronaldo do Palmeiras",
+				"65": "Gol de Messi do Palmeiras",
+				"76": "Falta cometina na meio de campo"
+			}
+		},
+
+		{
+			"id": 4,
+			"timeLine": {}
+		},
+
+		{
+			"id": 5,
+			"timeLine": {}
+		}
+	]
+
+}
